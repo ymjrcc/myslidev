@@ -1,6 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: seriph
+title: "程序员如何开始做一个 Side Project？"
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: "/img/bg.jpg"
@@ -9,7 +10,8 @@ class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
+colorSchema: 'dark'
 # some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
@@ -20,16 +22,13 @@ info: |
 drawings:
   persist: false
 ---
-<div class="text-gray-200 mb-12">
 
-# 程序员如何开始做一个
-# Side Project？
+<div class="text-5xl text-gray-200 mb-6">程序员如何开始做一个</div>
+<div class="text-5xl text-gray-200 mb-12">Side Project？</div>
 
-</div>
+<div class="text-2xl text-blue-300">
 
-<div class="text-blue-300">
-
-### ——以  “[我的人人](http://localhost:3000/)”  为例
+——以  “[我的人人](http://localhost:3000/)”  为例
 
 </div>
 
@@ -46,9 +45,14 @@ image: "/img/bg1.jpg"
 ---
 
 <div class="flex mb-6">
-  <div class="flex-1 mr-6 rounded-lg p-4 bg-gray-50 bg-opacity-20">
+  <div class="w-145 mr-6 rounded-lg p-4 bg-gray-50 bg-opacity-20">
     <div v-click class="text-2xl title font-bold mb-2">什么是 Side Project</div>
-    <div v-click class="leading-6 text-sm text-gray-200">Side Project 中文翻译：<br/>副项目、小项目、副业等。<br/>区别于主项目，是自己在闲暇时间开发的产品。</div>
+    <ul>
+      <li v-click class="leading-6 text-sm text-gray-200">人们将各种业余时间打造的产品或项目称为 “Side Project”。</li>
+      <li v-click class="leading-6 text-sm text-gray-200">Side Project 的初始需求，往往来源于自己或身边人，最开始只要满足自己或者最小群体的需求就足够了。</li>
+      <li v-click class="leading-6 text-sm text-gray-200">MVP(Minimum Viable Product)，最小可用产品，从产品的核心功能开始构建。</li>
+      <li v-click class="leading-6 text-sm text-gray-200">一个 Side Project，无论最终能否给你带来回报，把自己的想法从 0 到 1 实现，本身就是一个快乐而充实的过程。</li>
+    </ul>
   </div>
   <div class="flex-1 rounded-lg p-4 bg-gray-50 bg-opacity-20">
     <div v-click class="text-2xl title font-bold mb-2">Side Project 的意义</div>
@@ -57,18 +61,18 @@ image: "/img/bg1.jpg"
       <li v-click>练手，提高技术</li>
       <li v-click>赚钱</li>
       <li v-click>Just For Fun</li>
+      <li v-click>……</li>
     </ul>
   </div>
 </div>
-<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 h-70">
+<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 h-55">
 <div v-click class="text-2xl title font-bold mb-2">举几个栗子</div>
 <v-clicks>
 
-- Vue
-- 简书
+<!-- - Vue
+- [简书](https://www.jianshu.com/)
 - [雪球神器](https://github.com/ymjrcc/xueqiu_crx)
-- 直播/自媒体
-- 三体
+- [metro](https://ymjrcc.github.io/metro/) -->
 
 </v-clicks>
 </div>
@@ -101,9 +105,9 @@ image: "/img/bg2.jpg"
 <div class="rounded-lg p-6 bg-gray-50 bg-opacity-20">
 <v-clicks>
 
-- ❓ **What** - 我的产品是什么，产品需求边界在哪里?（要做什么，不做什么）
-- ❓ **Why** - 我为什么要做它，它能解决当下的什么问题，或对我有什么意义？
-- ❓ **How** - 我打算如何实现它？（用什么技术，花多长时间，做到什么程度）
+- ❓ **What** - 我的产品是什么?（要做什么，不做什么，产品需求边界）
+- ❓ **Why** - 我为什么要做它？（99%的需求都已经有人实现过，只有多想一步，才能创造价值）
+- ❓ **How** - 我打算如何实现它？（用什么技术，预计花多长时间，做到什么程度）
 
 </v-clicks>
 </div>
@@ -125,6 +129,7 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
@@ -163,6 +168,7 @@ image: "/img/bg3.jpg"
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
@@ -179,7 +185,7 @@ image: "/img/bg4.jpg"
 ---
 # Coding 准备
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-8">
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-120">
 <div v-click class="text-xl text-blue-300 mb-2">工欲善其事，必先利其器：准备合适的工具</div>
 <div class="ml-6">
 <v-clicks>
@@ -193,7 +199,7 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-8">
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-120">
 <div v-click class="text-xl text-blue-300 mb-2">怎么舒服怎么来：选择最适合自己的技术栈</div>
 <div class="ml-6">
 <v-clicks>
@@ -207,9 +213,14 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
+<div class="absolute right-14 top-27 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-90 h-100">
+1111
+</div>
+
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
@@ -226,8 +237,8 @@ image: "/img/bg4.jpg"
 ---
 # Coding 原则
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
-<div v-click class="text-xl text-blue-300 mb-2">不怕折腾，放心大胆地尝试最新的技术</div>
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-2">不怕折腾，放心大胆地尝试最新技术</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -238,33 +249,39 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
-<div v-click class="text-xl text-blue-300 mb-2">要代码质量，不要天马行空</div>
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-2">使用工具，强行约束</div>
 <div class="ml-6">
 <v-clicks>
 
-- [React.StrickMode](https://zhuanlan.zhihu.com/p/401329405)
+- [React.StrictMode](https://zhuanlan.zhihu.com/p/401329405)
 - TypeScript + ts-standard
 
 </v-clicks>
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
-<div v-click class="text-xl text-blue-300 mb-2">DRY</div>
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-2">追求代码质量，拒绝天马行空</div>
 <div class="ml-6">
 <v-clicks>
 
-- 函数复用、组件模块抽取
-- 代码优化和重构
+- DRY：函数复用、组件模块抽取
+- 代码优化、重构
+- 逻辑与数据解耦
 
 </v-clicks>
 </div>
 </div>
 
+<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-109">
+1111
+</div>
+
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
@@ -281,8 +298,8 @@ image: "/img/bg4.jpg"
 ---
 # Coding 心得
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
-<div v-click class="text-xl text-blue-300 mb-2">一边写代码，一边做笔记，做好知识沉淀</div>
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-2">笔记与代码同行，做好知识沉淀</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -293,7 +310,7 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
 <div v-click class="text-xl text-blue-300 mb-2">善用但克制使用第三方库</div>
 <div class="ml-6">
 <v-clicks>
@@ -305,22 +322,27 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
 <div v-click class="text-xl text-blue-300 mb-2">拥抱社区和开源</div>
 <div class="ml-6">
 <v-clicks>
 
-- 加社群答疑，向社区反馈使用中的 bug 和问题（提问的艺术）
-- 有能力的话提 pr，反哺社区
+- 用社群 / issue 提问，反馈 bug 和问题（[如何提问](https://www.yuque.com/docs/share/aedf72a6-e5e5-4bf4-b95f-12c19dddffdd)）
+- 发现 bug 若有能力自行修复，可提 pr 反哺社区
 - 考虑开源自己的作品
 
 </v-clicks>
 </div>
 </div>
 
+<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-109">
+1111
+</div>
+
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
@@ -365,6 +387,7 @@ function updateUser(id: number, update: User) {
 
 <style>
 h1 {
+  padding-bottom: 5px;
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
