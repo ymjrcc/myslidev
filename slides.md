@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: "/img/bg.jpg"
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -20,49 +20,103 @@ info: |
 drawings:
   persist: false
 ---
+<div class="text-gray-200 mb-12">
 
-# Welcome to Slidev
+# 程序员如何开始做一个
+# Side Project？
 
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
+<div class="text-blue-300">
+
+### ——以  “[我的人人](http://localhost:3000/)”  为例
+
 </div>
+
+<div class="pt-20 text-gray-300 text-right">研发中心-工程二组 (火星)</div>
+<div class="pt-4 text-gray-300 text-right pr-18">何一鸣</div>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
+layout: image
+image: "/img/bg1.jpg"
+---
 
-# What is Slidev?
+<div class="flex mb-6">
+  <div class="flex-1 mr-6 rounded-lg p-4 bg-gray-50 bg-opacity-20">
+    <div v-click class="text-2xl title font-bold mb-2">什么是 Side Project</div>
+    <div v-click class="leading-6 text-sm text-gray-200">Side Project 中文翻译：<br/>副项目、小项目、副业等。<br/>区别于主项目，是自己在闲暇时间开发的产品。</div>
+  </div>
+  <div class="flex-1 rounded-lg p-4 bg-gray-50 bg-opacity-20">
+    <div v-click class="text-2xl title font-bold mb-2">Side Project 的意义</div>
+    <ul class="text-sm text-gray-200">
+      <li v-click>解决自己或别人的问题</li>
+      <li v-click>练手，提高技术</li>
+      <li v-click>赚钱</li>
+      <li v-click>Just For Fun</li>
+    </ul>
+  </div>
+</div>
+<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 h-70">
+<div v-click class="text-2xl title font-bold mb-2">举几个栗子</div>
+<v-clicks>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+- Vue
+- 简书
+- [雪球神器](https://github.com/ymjrcc/xueqiu_crx)
+- 直播/自媒体
+- 三体
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+</v-clicks>
+</div>
 
-<br>
-<br>
+<style>
+.title {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+---
+layout: image
+image: "/img/bg2.jpg"
+---
+
+<v-click>
+
+# 开始前问自己几个问题：
+
+</v-click>
+
+<br/>
+
+<div class="rounded-lg p-6 bg-gray-50 bg-opacity-20">
+<v-clicks>
+
+- ❓ **What** - 我的产品是什么，产品需求边界在哪里?（要做什么，不做什么）
+- ❓ **Why** - 我为什么要做它，它能解决当下的什么问题，或对我有什么意义？
+- ❓ **How** - 我打算如何实现它？（用什么技术，花多长时间，做到什么程度）
+
+</v-clicks>
+</div>
+
+<br/>
+<br/>
+
+<h1 v-click>我工作太忙，没有时间做怎么办？</h1>
+<br/>
+<div class="rounded-lg p-6 bg-gray-50 bg-opacity-20">
+  <h2 v-click class="text-green-500 italic mb-4">不，你有！</h2>
+  <div class="text-gray-300 text-sm italic" v-click>✅ 需求驱动 ✅ 兴趣驱动 ✅ 善用零碎时间</div>
+</div>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -81,37 +135,215 @@ h1 {
 }
 </style>
 
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+layout: image
+image: "/img/bg3.jpg"
 ---
 
-# Code
+# 需求清单和项目里程碑
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20">
+  <div>
+    <span class="text-blue-300">分类拆解：</span>
+    <span v-click class="text-base">将整个工程分门别类，然后细化成一个个小任务，巧用 TODO，做一个勾一个</span>
+  </div>
+  <div>
+    <span class="text-blue-300">需求迭代：</span>
+    <span v-click class="text-base">做好规划，想好再改</span>
+  </div>
+</div>
+
+<br/>
+<div class="flex justify-around">
+  <img v-click src="/img/01.png" class="h-85"/>
+  <img v-click src="/img/02.png" class="h-85"/>
+  <img v-click src="/img/03.png" class="h-85"/>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg4.jpg"
+---
+# Coding 准备
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-8">
+<div v-click class="text-xl text-blue-300 mb-2">工欲善其事，必先利其器：准备合适的工具</div>
+<div class="ml-6">
+<v-clicks>
+
+- 代码托管：GitHub Private Repository
+- 编辑器：VS Code + 项目管理器插件
+- 需求与进度管理、笔记记录：Logseq
+- ……
+
+</v-clicks>
+</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-8">
+<div v-click class="text-xl text-blue-300 mb-2">怎么舒服怎么来：选择最适合自己的技术栈</div>
+<div class="ml-6">
+<v-clicks>
+
+- React （create-react-app）
+- Ant Design
+- echarts
+- ……
+
+</v-clicks>
+</div>
+</div>
+
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg4.jpg"
+---
+# Coding 原则
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
+<div v-click class="text-xl text-blue-300 mb-2">不怕折腾，放心大胆地尝试最新的技术</div>
+<div class="ml-6">
+<v-clicks>
+
+- TailWind CSS → Windi CSS
+- React 17 → React 18
+
+</v-clicks>
+</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
+<div v-click class="text-xl text-blue-300 mb-2">要代码质量，不要天马行空</div>
+<div class="ml-6">
+<v-clicks>
+
+- [React.StrickMode](https://zhuanlan.zhihu.com/p/401329405)
+- TypeScript + ts-standard
+
+</v-clicks>
+</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6">
+<div v-click class="text-xl text-blue-300 mb-2">DRY</div>
+<div class="ml-6">
+<v-clicks>
+
+- 函数复用、组件模块抽取
+- 代码优化和重构
+
+</v-clicks>
+</div>
+</div>
+
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg4.jpg"
+---
+# Coding 心得
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
+<div v-click class="text-xl text-blue-300 mb-2">一边写代码，一边做笔记，做好知识沉淀</div>
+<div class="ml-6">
+<v-clicks>
+
+- 代码片段（简陋版 dayjs）
+- 工具技巧（VS Code 正则搜索替换）
+
+</v-clicks>
+</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
+<div v-click class="text-xl text-blue-300 mb-2">善用但克制使用第三方库</div>
+<div class="ml-6">
+<v-clicks>
+
+- 杜绝层层封装（echarts-for-react）
+- 不要为了一个小功能引入一个大依赖（dayjs）
+
+</v-clicks>
+</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4">
+<div v-click class="text-xl text-blue-300 mb-2">拥抱社区和开源</div>
+<div class="ml-6">
+<v-clicks>
+
+- 加社群答疑，向社区反馈使用中的 bug 和问题（提问的艺术）
+- 有能力的话提 pr，反哺社区
+- 考虑开源自己的作品
+
+</v-clicks>
+</div>
+</div>
+
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg4.jpg"
+---
+
+# Coding
 
 Use code snippets and get the highlighting directly![^1]
+<div class="flex">
+<div class="flex-1">
+asdfasdfasdfasdfasfasd
+</div>
+<div class="flex-1">
 
 ```ts {all|2|1-6|9|all}
 interface User {
@@ -128,19 +360,18 @@ function updateUser(id: number, update: User) {
 }
 ```
 
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+</div>
+</div>
 
 <style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
 
@@ -290,7 +521,7 @@ const final = {
 
 LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 
-<br>
+<br/>
 
 Inline $\sqrt{3x-1}+(1+x)^2$
 
@@ -308,7 +539,7 @@ $$
 \end{array}
 $$
 
-<br>
+<br/>
 
 [Learn more](https://sli.dev/guide/syntax#latex)
 
