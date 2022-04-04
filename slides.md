@@ -1,7 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: seriph
-title: "程序员如何开始做一个 Side Project？"
+title: "程序员如何拥有一个 Side Project？"
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: "/img/bg.jpg"
@@ -23,7 +23,7 @@ drawings:
   persist: false
 ---
 
-<div class="text-5xl text-gray-200 mb-6">程序员如何开始做一个</div>
+<div class="text-5xl text-gray-200 mb-6">程序员如何拥有一个</div>
 <div class="text-5xl text-gray-200 mb-12">Side Project？</div>
 
 <div class="text-2xl text-blue-300">
@@ -69,10 +69,10 @@ image: "/img/bg1.jpg"
 <div v-click class="text-2xl title font-bold mb-2">举几个栗子</div>
 <v-clicks>
 
-<!-- - Vue
+- Vue
 - [简书](https://www.jianshu.com/)
 - [雪球神器](https://github.com/ymjrcc/xueqiu_crx)
-- [metro](https://ymjrcc.github.io/metro/) -->
+- [metro](https://ymjrcc.github.io/metro/)
 
 </v-clicks>
 </div>
@@ -181,6 +181,61 @@ h1 {
 
 ---
 layout: image
+image: "/img/bg8.jpg"
+---
+# 版本迭代：产品是如何演变的
+
+<div class="rounded-lg p-6 bg-gray-500 bg-opacity-50 mt-6 text-blue-300">
+
+- v0.0.0: <span v-click class="pl-2 text-white">有个需求——人人网要倒闭了，我要把我的发的状态都存下来</span>
+- v0.0.1: <span v-click class="pl-2 text-white">实现方式——用笔记软件存太麻烦了，写个网页存下来吧</span>
+- v0.1.0: <span v-click class="pl-2 text-white">加功能——有的状态带图片，图片存在相册里，那也要把相册存下来（路由）</span>
+- v0.1.1: <span v-click class="pl-2 text-white">加功能——相册都有了，日志没有说不过去吧</span>
+- v0.1.2: <span v-click class="pl-2 text-white">加功能——好友也是回忆的一部分，把好友信息也存下来</span>
+- v0.2.0: <span v-click class="pl-2 text-white">页面这么多了，用状态页做首页不合适，再写个首页做总览</span>
+- v0.2.1: <span v-click class="pl-2 text-white">重要的事件分散在各个页面里，按时间顺序捋出来，做个时间轴</span>
+- v0.3.0: <span v-click class="pl-2 text-white">既然有了很多数据，做个可视化数据分析</span>
+- v0.4.0: <span v-click class="pl-2 text-white">需求做完了，用户体验和性能优化</span>
+
+</div>
+
+<style>
+h1 {
+  padding-bottom: 5px;
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg8.jpg"
+---
+
+# 产品结构
+
+<img v-click src="/img/mind.png" />
+
+<style>
+h1 {
+  padding-bottom: 5px;
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
 image: "/img/bg4.jpg"
 ---
 # Coding 准备
@@ -233,7 +288,7 @@ h1 {
 
 ---
 layout: image
-image: "/img/bg4.jpg"
+image: "/img/bg5.jpg"
 ---
 # Coding 原则
 
@@ -294,12 +349,12 @@ h1 {
 
 ---
 layout: image
-image: "/img/bg4.jpg"
+image: "/img/bg6.jpg"
 ---
 # Coding 心得
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">笔记与代码同行，做好知识沉淀</div>
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-1">笔记与代码同行，做好知识沉淀</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -310,20 +365,21 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">善用但克制使用第三方库</div>
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-1">善用但克制使用第三方库</div>
 <div class="ml-6">
 <v-clicks>
 
 - 杜绝层层封装（echarts-for-react）
 - 不要为了一个小功能引入一个大依赖（dayjs）
+- 能自己实现就自己实现（[瀑布流](https://github.dev/ymjrcc/myrenren)）
 
 </v-clicks>
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">拥抱社区和开源</div>
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div v-click class="text-xl text-blue-300 mb-1">拥抱社区和开源</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -335,7 +391,7 @@ image: "/img/bg4.jpg"
 </div>
 </div>
 
-<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-109">
+<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-108">
 1111
 </div>
 
@@ -355,7 +411,7 @@ h1 {
 
 ---
 layout: image
-image: "/img/bg4.jpg"
+image: "/img/bg7.jpg"
 ---
 
 # Coding
