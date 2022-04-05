@@ -10,7 +10,7 @@ class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: true
+lineNumbers: false
 colorSchema: 'dark'
 # some information about the slides, markdown enabled
 info: |
@@ -220,7 +220,9 @@ image: "/img/bg8.jpg"
 
 # 产品结构
 
-<img v-click src="/img/mind.png" />
+<div class="rounded-lg p-4 bg-gray-500 bg-opacity-50 mt-6">
+  <img v-click src="/img/mind.png" />
+</div>
 
 <style>
 h1 {
@@ -271,6 +273,7 @@ image: "/img/bg4.jpg"
 
 <div class="absolute right-14 top-27 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-90 h-100">
 <div v-click class="text-xl text-blue-300 mb-2">忠告</div>
+<div class="ml-6">
 <v-clicks>
 
 - 不要在准备工作上花太多时间
@@ -279,7 +282,7 @@ image: "/img/bg4.jpg"
 - 干就完了
 
 </v-clicks>
-
+</div>
 </div>
 
 
@@ -300,50 +303,175 @@ h1 {
 layout: image
 image: "/img/bg5.jpg"
 ---
-# Coding 原则
+
+<div class="text-3xl text-gray-400 mb-1">Coding 原则 1：<span class="text-blue-300">不怕折腾，放心大胆地尝试最新技术</span></div>
 
 <div class="w-full flex">
 
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-105">
-<div v-click class="text-xl text-blue-300 mb-2">不怕折腾，放心大胆地尝试最新技术</div>
+<div v-click="1" class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-110">
+<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">TailWind CSS → Windi CSS</div>
+
 <div>
-<v-clicks>
 
-- TailWind CSS → Windi CSS
-- React 17 → React 18
-- create-react-app → vite
-
-</v-clicks>
-</div>
+```html {all|all|1|7-11|2|12-16|all}
+<div class="flex p-4 rounded">
+  <span class="text-xl text-white">
+  </span>
 </div>
 
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-105">
-<div v-click class="text-xl text-blue-300 mb-2">使用工具，强行约束</div>
-<div>
-<v-clicks>
-
-- [React.StrictMode](https://zhuanlan.zhihu.com/p/401329405)
-- TypeScript + ts-standard
-
-</v-clicks>
+<style>
+div{
+  display: flex;
+  padding: 1em;
+  border-radius: 0.25rem;
+}
+span{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+</style>
+```
 </div>
-</div>
 
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 flex-1 h-105">
-<div v-click class="text-xl text-blue-300 mb-2">要代码质量，不要天马行空</div>
-<div>
-<v-clicks>
+<div class="mt-2"><a target="_blank" href="https://www.tailwindcss.cn/">TailWind CSS</a>: 从此告别 CSS 文件</div>
+<div class="mt-2"><a target="_blank" href="https://windicss.org/guide/migration.html">Windi CSS</a>: 更小、更快、更强</div>
 
-- DRY：函数复用、组件模块抽取
-- 良好的代码结构，代码优化、重构
-- 逻辑与数据解耦
-
-</v-clicks>
-</div>
-</div>
 
 </div>
 
+<div v-click="7" class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1">
+<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">升级 React 18 遇到的坑</div>
+<ul>
+<li>3 月中旬项目启动，3 月底 React 发布了新版本</li>
+<li>为体验新版本特性，从 v17.0.2 升级到 v18.0.0</li>
+<li>遇到 Ant Design 多个组件不兼容的问题</li>
+<li>提 <a href="https://github.com/ant-design/ant-design/issues?q=author%3Aymjrcc" target="_blank">issues</a>，反馈问题</li>
+<li>版本回退 or 寻找临时解决方案</li>
+</ul>
+</div>
+
+<div v-after class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1">
+<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">如何在开发中更换脚手架</div>
+<ul>
+<li>由于惯性选择 create-react-app，热更新速度慢</li>
+<li>打算换成 <a href="https://cn.vitejs.dev/" target="_blank">vite</a> (速度更快，性能更好)</li>
+<li>先开一个新仓库，成功运行 vite</li>
+<li>将原仓库逻辑代码一点一点迁移过去</li>
+<li>注意两个框架<a href="https://github.com/ymjrcc/myrenren/commit/25b408619353110d877379246a861780c02d0407" target="_blank">不兼容之处</a>，仔细修改</li>
+<li>将新仓库代码覆盖原仓库，开个分支备份原仓库</li>
+</ul>
+</div>
+
+</div>
+
+---
+layout: image
+image: "/img/bg5.jpg"
+---
+
+<div class="text-3xl text-gray-400 mb-1">Coding 原则 2：<span class="text-blue-300">使用工具，强行约束</span></div>
+
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 h-105">
+
+<div v-click class="mb-4 pb-4 border-b border-gray-100/20">
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">
+<a href="https://zhuanlan.zhihu.com/p/401329405" target="_blank">React.StrictMode</a>
+</div>
+<div class="w-96">
+
+```jsx
+import { StrictMode } from 'react'
+
+const App = () => (
+  <StrictMode>
+    <App />
+  </StrictMode>
+)
+```
+
+</div>
+
+</div>
+
+<div v-click class="mb-4 pb-4 border-b border-gray-100/20">
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">TypeScript</div>
+</div>
+
+<div v-click>
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">ts-standard</div>
+<div class="text-md text-gray-200 pl-4">
+  TypeScript Style Guide, with linter and automatic code fixer based on 
+  <a href="https://standardjs.com/index.html#why-should-i-use-javascript-standard-style" target="_blank">StandardJS</a>
+</div>
+</div>
+
+</div>
+---
+layout: image
+image: "/img/bg5.jpg"
+---
+
+<div class="text-3xl text-gray-400 mb-1">Coding 原则 3：<span class="text-blue-300">不要放松对代码质量的要求</span></div>
+
+<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 mt-3 h-105">
+
+<div v-click class="mb-4 pb-4 border-b border-gray-100/20">
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">DRY：Don't Repeat Yourself</div>
+<div class="text-md text-gray-200 pl-4 pt-2">@/utils 函数复用</div>
+<div class="text-md text-gray-200 pl-4 pt-2">@/components 组件抽取</div>
+<div class="text-md text-gray-200 pl-4 pt-2">npm 模块导入</div>
+</div>
+
+<div v-click class="mb-4 pb-4 border-b border-gray-100/20">
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">代码优化</div>
+<div class="text-md text-gray-200 pl-4 pt-2">清晰的代码结构</div>
+<div class="text-md text-gray-200 pl-4 pt-2">持续重构</div>
+</div>
+
+<div v-click>
+<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">逻辑与数据解耦</div>
+<div class="text-md text-gray-200 pl-4 pt-2">有利于打包</div>
+<div class="text-md text-gray-200 pl-4 pt-2">方便移植复用</div>
+</div>
+
+</div>
+
+---
+layout: image
+image: "/img/bg7.jpg"
+---
+
+# 前端性能优化
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-100 h-102">
+  <div v-click class="text-xl text-blue-300 mb-2">First Paint</div>
+  <div v-click class="pl-4 py-2">import() 做代码分割</div>
+  <div class="ml-4" v-click>
+
+```jsx
+import { lazy } from 'react'
+const Home = lazy(() => import('./pages/Home'))
+```
+
+  </div>
+  <div v-click class="pl-4 pt-4 pb-2">source-map-explorer 分析模块空间占用</div>
+  <img v-click class="ml-4 w-19/20" src="/img/source-map-explorer.png" />
+</div>
+
+<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-110 h-65">
+  <div v-click class="text-xl text-blue-300 mb-2">减小打包体积</div>
+  <div v-click class="pl-4 pt-4">依赖瘦身，善用但克制使用第三方库</div>
+  <div v-click class="pl-4 pt-4">杜绝层层封装（真的需要 echarts-for-xxx 吗）</div>
+  <div v-click class="pl-4 pt-4">不要为了一个小功能引入一个大依赖（dayjs）</div>
+  <div v-click class="pl-4 pt-4">能自己实现就自己实现（热力图、瀑布流）</div>
+  <div v-click class="pl-4 pt-4">用图片代替没有交互的地图</div>
+</div>
+
+<div class="absolute right-14 bottom-10 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-110 h-30">
+  <div v-click class="text-xl text-blue-300 mb-2">注意优先级</div>
+  <div v-click class="pl-4 pt-4">抓大放小，实现功能在前，完善细节在后</div>
+</div>
 
 <style>
 h1 {
@@ -363,35 +491,28 @@ layout: image
 image: "/img/bg7.jpg"
 ---
 
-# 性能优化和用户体验
+# 提升用户体验
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-100">
-  <div v-click class="text-xl text-blue-300 mb-2">优先级</div>
-  <div v-click class="pl-4 pt-1">抓大放小，实现功能在前，完善细节在后</div>
-</div>
+<div class="flex">
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-100">
-  <div v-click class="text-xl text-blue-300 mb-2">优化打包体积、First Paint</div>
-  <div v-click class="pl-4 pt-3">source-map-explorer 分析模块模块空间占用</div>
-  <div v-click class="pl-4 pt-3">import() 做代码分割</div>
-  <div v-click class="pl-4 pt-3">依赖瘦身，善用但克制使用第三方库</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">杜绝层层封装（真的需要 echarts-for-xxx 吗）</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">不要为了一个小功能引入一个大依赖（dayjs）</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">能自己实现就自己实现（热力图、瀑布流）</div>
-  <div v-click class="pl-8 pt-2 pb-3 text-sm text-gray-300">用图片代替没有交互的地图</div>
-</div>
-
-<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-113 h-95">
-  <div v-click class="text-xl text-blue-300 mb-2">提升用户体验</div>
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mr-4 flex-1">
+  <div v-click class="text-xl text-blue-300">代码层面：</div>
   <div v-click class="pl-4 pt-4">React.lazy + Suspence 实现系统级的自动 loading</div>
+  <div v-click class="text-xl text-blue-300 mt-8">设计层面：</div>
   <div v-click class="pl-4 pt-4">统一的设计语言，提高 UI 审美</div>
+  <div v-click class="text-xl text-blue-300 mt-8">需求层面：</div>
   <div v-click class="pl-4 pt-4">多场景支持（如响应式布局、dark 模式等）</div>
-  <div v-click class="pl-4 pt-4">考虑性价比，拿掉开销大但意义不大的模块</div>
-  <div v-click class="pl-4 pt-4"> 如果要做开源：</div>
-  <div v-click class="pl-8 pt-3 text-sm text-gray-300">完善的教程和文档</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">良好的兼容性</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">i18n</div>
-  <div v-click class="pl-8 pt-2 text-sm text-gray-300">收集用户反馈，持续迭代优化</div>
+  <div v-click class="pl-4 pt-4 pb-4">考虑性价比，拿掉开销大但意义不大的模块</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 flex-1">
+  <div v-click class="text-xl text-blue-300"> 如果要做开源：</div>
+  <div v-click class="pl-4 pt-4">完善的教程和文档</div>
+  <div v-click class="pl-4 pt-4">良好的兼容性</div>
+  <div v-click class="pl-4 pt-4">i18n</div>
+  <div v-click class="pl-4 pt-4">收集用户反馈，持续迭代优化</div>
+</div>
+
 </div>
 
 <style>
@@ -406,7 +527,6 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-
 
 ---
 layout: image
@@ -504,286 +624,3 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-
----
-layout: image
-image: "/img/bg7.jpg"
----
-
-# Coding
-
-Use code snippets and get the highlighting directly![^1]
-<div class="flex">
-<div class="flex-1">
-asdfasdfasdfasdfasfasd
-</div>
-<div class="flex-1">
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-</div>
-</div>
-
-<style>
-h1 {
-  padding-bottom: 5px;
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br/>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br/>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
