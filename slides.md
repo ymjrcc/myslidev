@@ -1,24 +1,16 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-title: "程序员如何拥有一个 Side Project？"
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: "/img/bg.jpg"
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+title: 程序员如何拥有一个 Side Project？
+background: /img/bg.jpg
+class: text-center
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: false
-colorSchema: 'dark'
-# some information about the slides, markdown enabled
+colorSchema: dark
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
 drawings:
   persist: false
 ---
@@ -36,12 +28,18 @@ drawings:
 <div class="pt-4 text-gray-300 text-right pr-18">何一鸣</div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+这是一个偏体验类的分享
+
+在场有多少人上学的时候玩过人人网？
+
+半个月前，我有了一个新想法，趁人人网倒闭之前，把我大学四年发的状态都保存下来。
+
+这半个多月里，利用空闲时间，逐步把这件事给完成得差不多了，算是做了个 side project。借这个机会，给大家分享一下做这件事的过程，以及我的一些想法。
 -->
 
 ---
 layout: image
-image: "/img/bg1.jpg"
+image: /img/bg1.jpg
 ---
 
 <div class="flex mb-6">
@@ -87,6 +85,12 @@ image: "/img/bg1.jpg"
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!--
+雪球神器：为了解决我自己看雪球网的需求
+
+metro
+-->
 
 ---
 layout: image
@@ -244,7 +248,7 @@ image: "/img/bg4.jpg"
 # 开工准备
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">工欲善其事，必先利其器：准备合适的工具</div>
+<div v-click class="text-xl mb-2 rounded inline-block bg-blue-400/40 px-4 py-2px">工欲善其事，必先利其器：准备合适的工具</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -258,7 +262,7 @@ image: "/img/bg4.jpg"
 </div>
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">怎么舒服怎么来：选择最适合自己的技术栈</div>
+<div v-click class="text-xl mb-2 rounded inline-block bg-blue-400/40 px-4 py-2px">怎么舒服怎么来：选择最适合自己的技术栈</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -272,7 +276,7 @@ image: "/img/bg4.jpg"
 </div>
 
 <div class="absolute right-14 top-27 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-90 h-100">
-<div v-click class="text-xl text-blue-300 mb-2">忠告</div>
+<div v-click class="text-xl mb-2 rounded inline-block bg-blue-400/40 px-4 py-2px">忠告</div>
 <div class="ml-6">
 <v-clicks>
 
@@ -309,7 +313,7 @@ image: "/img/bg5.jpg"
 <div class="w-full flex">
 
 <div v-click="1" class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-110">
-<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">TailWind CSS → Windi CSS</div>
+<div class="text-xl mb-1 rounded bg-blue-400/40 text-center">TailWind CSS → Windi CSS</div>
 
 <div>
 
@@ -341,7 +345,7 @@ span{
 </div>
 
 <div v-click="7" class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1">
-<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">升级 React 18 遇到的坑</div>
+<div class="text-xl mb-1 rounded bg-blue-400/40 text-center">升级 React 18 遇到的坑</div>
 <ul>
 <li>3 月中旬项目启动，3 月底 React 发布了新版本</li>
 <li>为体验新版本特性，从 v17.0.2 升级到 v18.0.0</li>
@@ -352,7 +356,7 @@ span{
 </div>
 
 <div v-after class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1">
-<div class="text-xl font-bold mb-1 rounded bg-gray-100/30 text-center">如何在开发中更换脚手架</div>
+<div class="text-xl mb-1 rounded bg-blue-400/40 text-center">如何在开发中更换脚手架</div>
 <ul>
 <li>由于惯性选择 create-react-app，热更新速度慢</li>
 <li>打算换成 <a href="https://cn.vitejs.dev/" target="_blank">vite</a> (速度更快，性能更好)</li>
@@ -375,7 +379,7 @@ image: "/img/bg5.jpg"
 <div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 h-105">
 
 <div v-click class="mb-4 pb-4 border-b border-gray-100/20">
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">
 <a href="https://zhuanlan.zhihu.com/p/401329405" target="_blank">React.StrictMode</a>
 </div>
 <div class="w-96">
@@ -395,11 +399,11 @@ const App = () => (
 </div>
 
 <div v-click class="mb-4 pb-4 border-b border-gray-100/20">
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">TypeScript</div>
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">TypeScript</div>
 </div>
 
 <div v-click>
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">ts-standard</div>
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">ts-standard</div>
 <div class="text-md text-gray-200 pl-4">
   TypeScript Style Guide, with linter and automatic code fixer based on 
   <a href="https://standardjs.com/index.html#why-should-i-use-javascript-standard-style" target="_blank">StandardJS</a>
@@ -417,20 +421,20 @@ image: "/img/bg5.jpg"
 <div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 mt-3 h-105">
 
 <div v-click class="mb-4 pb-4 border-b border-gray-100/20">
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">DRY：Don't Repeat Yourself</div>
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">DRY：Don't Repeat Yourself</div>
 <div class="text-md text-gray-200 pl-4 pt-2">@/utils 函数复用</div>
 <div class="text-md text-gray-200 pl-4 pt-2">@/components 组件抽取</div>
 <div class="text-md text-gray-200 pl-4 pt-2">npm 模块导入</div>
 </div>
 
 <div v-click class="mb-4 pb-4 border-b border-gray-100/20">
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">代码优化</div>
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">代码优化</div>
 <div class="text-md text-gray-200 pl-4 pt-2">清晰的代码结构</div>
 <div class="text-md text-gray-200 pl-4 pt-2">持续重构</div>
 </div>
 
 <div v-click>
-<div class="text-2xl font-bold mb-2 rounded bg-gray-100/30 inline-block px-2">逻辑与数据解耦</div>
+<div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">逻辑与数据解耦</div>
 <div class="text-md text-gray-200 pl-4 pt-2">有利于打包</div>
 <div class="text-md text-gray-200 pl-4 pt-2">方便移植复用</div>
 </div>
@@ -445,7 +449,7 @@ image: "/img/bg7.jpg"
 # 前端性能优化
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-100 h-102">
-  <div v-click class="text-xl text-blue-300 mb-2">First Paint</div>
+  <div v-click class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">First Paint</div>
   <div v-click class="pl-4 py-2">import() 做代码分割</div>
   <div class="ml-4" v-click>
 
@@ -460,7 +464,7 @@ const Home = lazy(() => import('./pages/Home'))
 </div>
 
 <div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-110 h-65">
-  <div v-click class="text-xl text-blue-300 mb-2">减小打包体积</div>
+  <div v-click class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">减小打包体积</div>
   <div v-click class="pl-4 pt-4">依赖瘦身，善用但克制使用第三方库</div>
   <div v-click class="pl-4 pt-4">杜绝层层封装（真的需要 echarts-for-xxx 吗）</div>
   <div v-click class="pl-4 pt-4">不要为了一个小功能引入一个大依赖（dayjs）</div>
@@ -469,7 +473,7 @@ const Home = lazy(() => import('./pages/Home'))
 </div>
 
 <div class="absolute right-14 bottom-10 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-110 h-30">
-  <div v-click class="text-xl text-blue-300 mb-2">注意优先级</div>
+  <div v-click class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">注意优先级</div>
   <div v-click class="pl-4 pt-4">抓大放小，实现功能在前，完善细节在后</div>
 </div>
 
@@ -496,17 +500,17 @@ image: "/img/bg7.jpg"
 <div class="flex">
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mr-4 flex-1">
-  <div v-click class="text-xl text-blue-300">代码层面：</div>
+  <div v-click class="text-xl mt-2 rounded bg-blue-400/40 inline-block px-4 py-2px">代码层面</div>
   <div v-click class="pl-4 pt-4">React.lazy + Suspence 实现系统级的自动 loading</div>
-  <div v-click class="text-xl text-blue-300 mt-8">设计层面：</div>
+  <div v-click class="text-xl mt-6 rounded bg-blue-400/40 inline-block px-4 py-2px">设计层面</div>
   <div v-click class="pl-4 pt-4">统一的设计语言，提高 UI 审美</div>
-  <div v-click class="text-xl text-blue-300 mt-8">需求层面：</div>
+  <div v-click class="text-xl mt-6 rounded bg-blue-400/40 inline-block px-4 py-2px">需求层面</div>
   <div v-click class="pl-4 pt-4">多场景支持（如响应式布局、dark 模式等）</div>
   <div v-click class="pl-4 pt-4 pb-4">考虑性价比，拿掉开销大但意义不大的模块</div>
 </div>
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 flex-1">
-  <div v-click class="text-xl text-blue-300"> 如果要做开源：</div>
+  <div v-click class="text-xl mt-2 rounded bg-blue-400/40 inline-block px-4 py-2px"> 如果要做开源</div>
   <div v-click class="pl-4 pt-4">完善的教程和文档</div>
   <div v-click class="pl-4 pt-4">良好的兼容性</div>
   <div v-click class="pl-4 pt-4">i18n</div>
@@ -537,7 +541,7 @@ image: "/img/bg6.jpg"
 <div class="w-full flex">
 
 <div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mr-4 flex-1 h-105">
-<div v-click class="text-xl text-blue-300 mb-1">做笔记很重要！</div>
+<div v-click class="text-xl mb-1 rounded bg-blue-400/40 inline-block px-4 py-1">做笔记很重要！</div>
 <div>
 <v-clicks>
 
@@ -550,7 +554,7 @@ image: "/img/bg6.jpg"
 </div>
 
 <div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mr-4 flex-1">
-<div v-click class="text-xl text-blue-300 mb-1">拥抱社区和开源</div>
+<div v-click class="text-xl mb-1 rounded bg-blue-400/40 inline-block px-4 py-1">拥抱社区和开源</div>
 <div>
 <v-clicks>
 
@@ -563,7 +567,7 @@ image: "/img/bg6.jpg"
 </div>
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 flex-1">
-<div v-click class="text-xl text-blue-300 mb-1">“上价值”</div>
+<div v-click class="text-xl mb-1 rounded bg-blue-400/40 inline-block px-4 py-1">“上价值”</div>
 <div>
 <v-clicks>
 
