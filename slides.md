@@ -48,15 +48,15 @@ image: "/img/bg1.jpg"
   <div class="w-145 mr-6 rounded-lg p-4 bg-gray-50 bg-opacity-20">
     <div v-click class="text-2xl title font-bold mb-2">什么是 Side Project</div>
     <ul>
-      <li v-click class="leading-6 text-sm text-gray-200">人们将各种业余时间打造的产品或项目称为 “Side Project”。</li>
-      <li v-click class="leading-6 text-sm text-gray-200">Side Project 的初始需求，往往来源于自己或身边人，最开始只要满足自己或者最小群体的需求就足够了。</li>
-      <li v-click class="leading-6 text-sm text-gray-200">MVP(Minimum Viable Product)，最小可用产品，从产品的核心功能开始构建。</li>
-      <li v-click class="leading-6 text-sm text-gray-200">一个 Side Project，无论最终能否给你带来回报，把自己的想法从 0 到 1 实现，本身就是一个快乐而充实的过程。</li>
+      <li v-click class="leading-6 text-gray-200">人们将各种业余时间打造的产品或项目称为 “Side Project”。</li>
+      <li v-click class="leading-6 text-gray-200">Side Project 的初始需求，往往来源于自己或身边人，最开始只要满足自己或者最小群体的需求就足够了。</li>
+      <li v-click class="leading-6 text-gray-200">MVP(Minimum Viable Product)，最小可用产品，从产品的核心功能开始构建。</li>
+      <li v-click class="leading-6 text-gray-200">一个 Side Project，无论最终能否给你带来回报，把自己的想法从 0 到 1 实现，本身就是一个快乐而充实的过程。</li>
     </ul>
   </div>
   <div class="flex-1 rounded-lg p-4 bg-gray-50 bg-opacity-20">
-    <div v-click class="text-2xl title font-bold mb-2">Side Project 的意义</div>
-    <ul class="text-sm text-gray-200">
+    <div v-click class="text-2xl title font-bold mb-2">Side Project 的目的</div>
+    <ul class="text-gray-200">
       <li v-click>解决自己或别人的问题</li>
       <li v-click>练手，提高技术</li>
       <li v-click>赚钱</li>
@@ -65,14 +65,13 @@ image: "/img/bg1.jpg"
     </ul>
   </div>
 </div>
-<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 h-55">
+<div class="rounded-lg p-4 bg-gray-50 bg-opacity-20 h-42">
 <div v-click class="text-2xl title font-bold mb-2">举几个栗子</div>
 <v-clicks>
 
-- Vue
-- [简书](https://www.jianshu.com/)
-- [雪球神器](https://github.com/ymjrcc/xueqiu_crx)
-- [metro](https://ymjrcc.github.io/metro/)
+- Apple 生态大量的独立开发者，通过 Side Project 给自己一份“睡后收入”
+- Side Project 的最高境界，发展成 Main Project：Vue、[简书](https://www.jianshu.com/)
+- 我的 Side Projects：[雪球神器](https://github.com/ymjrcc/xueqiu_crx)、[metro](https://ymjrcc.github.io/metro/)、我的人人
 
 </v-clicks>
 </div>
@@ -96,7 +95,7 @@ image: "/img/bg2.jpg"
 
 <v-click>
 
-# 开始前问自己几个问题：
+# 真的要开始吗？先问自己几个问题：
 
 </v-click>
 
@@ -146,16 +145,16 @@ layout: image
 image: "/img/bg3.jpg"
 ---
 
-# 需求清单和项目里程碑
+# 磨刀不误砍柴工：列一个需求清单 / Todolist
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20">
-  <div>
+<div class="rounded-lg py-2 px-4 bg-gray-50 bg-opacity-20">
+  <div class="mb-1">
     <span class="text-blue-300">分类拆解：</span>
     <span v-click class="text-base">将整个工程分门别类，然后细化成一个个小任务，巧用 TODO，做一个勾一个</span>
   </div>
   <div>
-    <span class="text-blue-300">需求迭代：</span>
-    <span v-click class="text-base">做好规划，想好再改</span>
+    <span class="text-blue-300">版本迭代：</span>
+    <span v-click class="text-base">统筹规划，有排期和项目里程碑；想好再改，不要东一榔头西一棒</span>
   </div>
 </div>
 
@@ -183,7 +182,7 @@ h1 {
 layout: image
 image: "/img/bg8.jpg"
 ---
-# 版本迭代：产品是如何演变的
+# 产品演变：“我的人人”是如何从 0 到 1 的
 
 <div class="rounded-lg p-6 bg-gray-500 bg-opacity-50 mt-6 text-blue-300">
 
@@ -195,7 +194,9 @@ image: "/img/bg8.jpg"
 - v0.2.0: <span v-click class="pl-2 text-white">页面这么多了，用状态页做首页不合适，再写个首页做总览</span>
 - v0.2.1: <span v-click class="pl-2 text-white">重要的事件分散在各个页面里，按时间顺序捋出来，做个时间轴</span>
 - v0.3.0: <span v-click class="pl-2 text-white">既然有了很多数据，做个可视化数据分析</span>
-- v0.4.0: <span v-click class="pl-2 text-white">需求做完了，用户体验和性能优化</span>
+- v0.4.0: <span v-click class="pl-2 text-white">性能优化和用户体验</span>
+- ……
+- v1.0.0: <span v-click class="pl-2 text-white">产品上线</span>
 
 </div>
 
@@ -238,7 +239,7 @@ h1 {
 layout: image
 image: "/img/bg4.jpg"
 ---
-# Coding 准备
+# 开工准备
 
 <div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-120">
 <div v-click class="text-xl text-blue-300 mb-2">工欲善其事，必先利其器：准备合适的工具</div>
@@ -259,7 +260,7 @@ image: "/img/bg4.jpg"
 <div class="ml-6">
 <v-clicks>
 
-- React （create-react-app）
+- React
 - Ant Design
 - echarts
 - ……
@@ -269,7 +270,16 @@ image: "/img/bg4.jpg"
 </div>
 
 <div class="absolute right-14 top-27 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-90 h-100">
-1111
+<div v-click class="text-xl text-blue-300 mb-2">忠告</div>
+<v-clicks>
+
+- 不要在准备工作上花太多时间
+- “差生文具多”
+- 不要陷入选择恐惧
+- 干就完了
+
+</v-clicks>
+
 </div>
 
 
@@ -292,21 +302,24 @@ image: "/img/bg5.jpg"
 ---
 # Coding 原则
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div class="w-full flex">
+
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-105">
 <div v-click class="text-xl text-blue-300 mb-2">不怕折腾，放心大胆地尝试最新技术</div>
-<div class="ml-6">
+<div>
 <v-clicks>
 
 - TailWind CSS → Windi CSS
 - React 17 → React 18
+- create-react-app → vite
 
 </v-clicks>
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 mr-4 flex-1 h-105">
 <div v-click class="text-xl text-blue-300 mb-2">使用工具，强行约束</div>
-<div class="ml-6">
+<div>
 <v-clicks>
 
 - [React.StrictMode](https://zhuanlan.zhihu.com/p/401329405)
@@ -316,21 +329,19 @@ image: "/img/bg5.jpg"
 </div>
 </div>
 
-<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-2">追求代码质量，拒绝天马行空</div>
-<div class="ml-6">
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-3 flex-1 h-105">
+<div v-click class="text-xl text-blue-300 mb-2">要代码质量，不要天马行空</div>
+<div>
 <v-clicks>
 
 - DRY：函数复用、组件模块抽取
-- 代码优化、重构
+- 良好的代码结构，代码优化、重构
 - 逻辑与数据解耦
 
 </v-clicks>
 </div>
 </div>
 
-<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-109">
-1111
 </div>
 
 
@@ -349,52 +360,137 @@ h1 {
 
 ---
 layout: image
+image: "/img/bg7.jpg"
+---
+
+# 性能优化和用户体验
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-4 w-100">
+  <div v-click class="text-xl text-blue-300 mb-2">优先级</div>
+  <div v-click class="pl-4 pt-1">抓大放小，实现功能在前，完善细节在后</div>
+</div>
+
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 mt-6 w-100">
+  <div v-click class="text-xl text-blue-300 mb-2">优化打包体积、First Paint</div>
+  <div v-click class="pl-4 pt-3">source-map-explorer 分析模块模块空间占用</div>
+  <div v-click class="pl-4 pt-3">import() 做代码分割</div>
+  <div v-click class="pl-4 pt-3">依赖瘦身，善用但克制使用第三方库</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">杜绝层层封装（真的需要 echarts-for-xxx 吗）</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">不要为了一个小功能引入一个大依赖（dayjs）</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">能自己实现就自己实现（热力图、瀑布流）</div>
+  <div v-click class="pl-8 pt-2 pb-3 text-sm text-gray-300">用图片代替没有交互的地图</div>
+</div>
+
+<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-113 h-95">
+  <div v-click class="text-xl text-blue-300 mb-2">提升用户体验</div>
+  <div v-click class="pl-4 pt-4">React.lazy + Suspence 实现系统级的自动 loading</div>
+  <div v-click class="pl-4 pt-4">统一的设计语言，提高 UI 审美</div>
+  <div v-click class="pl-4 pt-4">多场景支持（如响应式布局、dark 模式等）</div>
+  <div v-click class="pl-4 pt-4">考虑性价比，拿掉开销大但意义不大的模块</div>
+  <div v-click class="pl-4 pt-4"> 如果要做开源：</div>
+  <div v-click class="pl-8 pt-3 text-sm text-gray-300">完善的教程和文档</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">良好的兼容性</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">i18n</div>
+  <div v-click class="pl-8 pt-2 text-sm text-gray-300">收集用户反馈，持续迭代优化</div>
+</div>
+
+<style>
+h1 {
+  padding-bottom: 5px;
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+---
+layout: image
 image: "/img/bg6.jpg"
 ---
-# Coding 心得
+# 一些心得体会
 
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-1">笔记与代码同行，做好知识沉淀</div>
-<div class="ml-6">
+<div class="w-full flex">
+
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mr-4 flex-1 h-105">
+<div v-click class="text-xl text-blue-300 mb-1">做笔记很重要！</div>
+<div>
 <v-clicks>
 
-- 代码片段（简陋版 dayjs）
-- 工具技巧（VS Code 正则搜索替换）
+- 整理灵感、管理需求
+- 提炼保存可复用的代码片段
+- 记录使用工具的技巧
 
 </v-clicks>
 </div>
 </div>
 
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
-<div v-click class="text-xl text-blue-300 mb-1">善用但克制使用第三方库</div>
-<div class="ml-6">
-<v-clicks>
-
-- 杜绝层层封装（echarts-for-react）
-- 不要为了一个小功能引入一个大依赖（dayjs）
-- 能自己实现就自己实现（[瀑布流](https://github.dev/ymjrcc/myrenren)）
-
-</v-clicks>
-</div>
-</div>
-
-<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mt-4 w-120">
+<div class="rounded-lg px-3 py-2 bg-gray-50 bg-opacity-20 mr-4 flex-1">
 <div v-click class="text-xl text-blue-300 mb-1">拥抱社区和开源</div>
-<div class="ml-6">
+<div>
 <v-clicks>
 
 - 用社群 / issue 提问，反馈 bug 和问题（[如何提问](https://www.yuque.com/docs/share/aedf72a6-e5e5-4bf4-b95f-12c19dddffdd)）
 - 发现 bug 若有能力自行修复，可提 pr 反哺社区
-- 考虑开源自己的作品
+- 迭代成熟后，考虑开源自己的作品
 
 </v-clicks>
 </div>
 </div>
 
-<div class="absolute right-14 top-25 rounded-lg p-3 bg-gray-50 bg-opacity-20 w-92 h-108">
-1111
+<div class="rounded-lg p-3 bg-gray-50 bg-opacity-20 flex-1">
+<div v-click class="text-xl text-blue-300 mb-1">“上价值”</div>
+<div>
+<v-clicks>
+
+- 在岸上永远学不会游泳
+- 汝果欲学诗，功夫在诗外
+- 种一棵树最好的时间是十年前，其次是现在
+- 自我驱动，兴趣是最好的老师
+
+</v-clicks>
+</div>
 </div>
 
+</div>
+
+<style>
+h1 {
+  padding-bottom: 5px;
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+image: "/img/bg9.jpg"
+---
+
+# 工具推荐
+
+<div class="rounded-lg p-6 bg-gray-50 bg-opacity-20 text-blue-300 mt-6 h-100">
+<v-clicks>
+
+- Logseq <span class="pl-4 text-white">笔记管理（markdown，双链，本地存储，隐私优先）</span>
+- VS Code Project Manager<span class="pl-4 text-white">VS Code 多项目切换神器</span>
+- github.dev<span class="pl-4 text-white">将 GitHub 仓库变成在线 VS Code</span>
+- source-map-explorer<span class="pl-4 text-white">基于 source-map 的可视化代码分析溯源工具</span>
+- slidev<span class="pl-4 text-white">用 markdown 和 html 语言生成在线 PPT</span>
+- unsplash<span class="pl-4 text-white">免费高清图库</span>
+- TinyPNG for Mac<span class="pl-4 text-white">无损压缩图片客户端工具</span>
+
+</v-clicks>
+</div>
 
 <style>
 h1 {
