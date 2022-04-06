@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /myslidev/",
     "dev": "slidev --open",
     "export": "slidev export --dark --format png"
   },
