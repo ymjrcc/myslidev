@@ -157,7 +157,7 @@ image: "/img/bg3.jpg"
 
 # 磨刀不误砍柴工：列一个需求清单 / Todolist
 
-<div class="rounded-lg py-2 px-4 bg-gray-50 bg-opacity-20">
+<div class="rounded-lg py-2 px-4 bg-gray-800/40">
   <div class="mb-1">
     <span class="text-blue-300">分类拆解：</span>
     <span v-click class="text-base">将整个工程分门别类，然后细化成一个个小任务，巧用 TODO，做一个勾一个</span>
@@ -237,7 +237,9 @@ image: "/img/bg8.jpg"
 # 产品结构
 
 <div class="rounded-lg p-4 bg-gray-800/40 mt-6">
+<a href="http://localhost:3000/" target="_blank">
   <img v-click src="/img/mind.png" />
+</a>
 </div>
 
 <style>
@@ -272,7 +274,6 @@ image: "/img/bg4.jpg"
 
 - 代码托管：GitHub Private Repository
 - 编辑器：VS Code + 项目管理器插件
-- 包管理工具：yarn
 - 需求与进度管理、笔记记录：Logseq
 
 </v-clicks>
@@ -288,6 +289,7 @@ image: "/img/bg4.jpg"
 - TypeScript
 - Ant Design
 - echarts
+- yarn
 
 </v-clicks>
 </div>
@@ -332,7 +334,7 @@ image: "/img/bg5.jpg"
 <div class="w-full flex">
 
 <div v-click="1" class="rounded-lg px-3 py-2 bg-gray-800/40 mt-3 mr-4 flex-1 h-110">
-<div class="text-xl mb-1 rounded bg-blue-400/40 text-center">TailWind CSS → Windi CSS</div>
+<div class="text-lg mb-1 rounded bg-blue-400/40 text-center">TailWind CSS → Windi CSS</div>
 
 <div>
 
@@ -622,6 +624,7 @@ image: "/img/bg6.jpg"
 - 在岸上永远学不会游泳
 - 汝果欲学诗，功夫在诗外
 - 种一棵树最好的时间是十年前，其次是现在
+- 如何当自己的项目经理/产品经理
 - 自我驱动，兴趣是最好的老师
 
 </v-clicks>
@@ -653,14 +656,15 @@ image: "/img/bg9.jpg"
 <div class="rounded-lg p-6 bg-gray-800/40 text-blue-300 mt-6 h-100">
 <v-clicks>
 
-- Logseq <span class="pl-4 text-white">笔记管理（markdown，双链，本地存储，隐私优先）</span>
+- Logseq <span class="pl-4 text-white">笔记管理（markdown，开源，双链，本地存储，隐私优先）</span>
 - VS Code Project Manager<span class="pl-4 text-white">VS Code 多项目切换神器</span>
 - github.dev<span class="pl-4 text-white">将 GitHub 仓库变成在线 VS Code</span>
+- [Windi CSS](https://windicss.org/guide/) <span class="pl-4 text-white">TailWind CSS 升级版，再也不用写 .css 啦</span>
 - source-map-explorer<span class="pl-4 text-white">基于 source-map 的可视化代码分析溯源工具</span>
 - [stackblitz](https://stackblitz.com/) <span class="pl-4 text-white">基于 VS Code 的在线开发/代码分享工具</span>
-- slidev<span class="pl-4 text-white">用 markdown 和 html 语言生成在线 PPT</span>
-- unsplash<span class="pl-4 text-white">免费高清图库</span>
-- TinyPNG for Mac<span class="pl-4 text-white">无损压缩图片客户端工具</span>
+- [slidev](https://cn.sli.dev/) <span class="pl-4 text-white">用 markdown 和 html 语言生成在线 PPT</span>
+- [unsplash](https://unsplash.com/) <span class="pl-4 text-white">海量、高质量、高清免费图库，找图神器</span>
+- TinyPNG for Mac<span class="pl-4 text-white">TinyPNG 客户端版本，无损压缩图片工具</span>
 
 </v-clicks>
 </div>
