@@ -32,6 +32,8 @@ drawings:
 
 在场有多少人上学的时候玩过人人网？
 
+人人网衰败也不是一天两天的事情了，我就怕它哪天倒闭，我大学四年发的东西全都没有了。
+
 半个月前，我有了一个新想法，趁人人网倒闭之前，把我大学四年发的状态都保存下来。
 
 这半个多月里，利用空闲时间，逐步把这件事给完成得差不多了，算是做了个 side project。借这个机会，给大家分享一下做这件事的过程，以及我的一些想法。
@@ -87,7 +89,7 @@ image: /img/bg1.jpg
 </style>
 
 <!--
-雪球神器：为了解决我自己看雪球网的需求
+雪球神器：为了解决我自己看雪球网的需求，通过这个项目学会了如何写浏览器扩展
 
 metro：为了解决我朋友每天发微博记录地铁通车时间的需求（就算是一个非常简单的页面，只要能够满足用户的需求，就是有意义的）
 
@@ -159,7 +161,7 @@ image: "/img/bg3.jpg"
 
 <div class="rounded-lg py-2 px-4 bg-gray-800/40">
   <div class="mb-1">
-    <span class="text-blue-300">分类拆解：</span>
+    <span class="text-blue-300">化整为零：</span>
     <span v-click class="text-base">将整个工程分门别类，然后细化成一个个小任务，巧用 TODO，做一个勾一个</span>
   </div>
   <div>
@@ -275,6 +277,7 @@ image: "/img/bg4.jpg"
 - 代码托管：GitHub Private Repository
 - 编辑器：VS Code + 项目管理器插件
 - 需求与进度管理、笔记记录：Logseq
+- 好用的梯子一把
 
 </v-clicks>
 </div>
@@ -472,7 +475,7 @@ image: "/img/bg5.jpg"
 <div v-click class="mb-4 pb-4 border-b border-gray-100/20">
 <div class="text-xl mb-2 rounded bg-blue-400/40 inline-block px-4 py-2px">代码优化</div>
 <div class="text-md text-gray-200 pl-4 pt-2">清晰的代码结构</div>
-<div class="text-md text-gray-200 pl-4 pt-2">持续重构</div>
+<div class="text-md text-gray-200 pl-4 pt-2">持续重构（借助编辑器）</div>
 </div>
 
 <div v-click>
@@ -555,8 +558,8 @@ image: "/img/bg7.jpg"
   <div v-click class="text-xl mt-6 rounded bg-blue-400/40 inline-block px-4 py-2px">设计层面</div>
   <div v-click class="pl-4 pt-4">统一的设计语言，提高 UI 审美</div>
   <div v-click class="text-xl mt-6 rounded bg-blue-400/40 inline-block px-4 py-2px">需求层面</div>
-  <div v-click class="pl-4 pt-4">多场景支持（如响应式布局、dark 模式等）</div>
-  <div v-click class="pl-4 pt-4 pb-4">考虑性价比，拿掉开销大但意义不大的模块</div>
+  <div v-click class="pl-4 pt-4 pb-4">多场景支持（如响应式布局、dark 模式等）</div>
+  <!-- <div v-click class="pl-4 pt-4 pb-4">考虑性价比，拿掉开销大但意义不大的模块</div> -->
 </div>
 
 <div class="rounded-lg p-3 bg-gray-800/40 flex-1">
