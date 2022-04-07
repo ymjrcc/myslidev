@@ -373,7 +373,7 @@ span{
 <ul>
 <li>3 月中旬项目启动，3 月底 React 发布了新版本</li>
 <li>为体验新版本特性，从 v17.0.2 升级到 v18.0.0</li>
-<li>遇到 Ant Design 多个组件不兼容的问题</li>
+<li>遇到 Ant Design 多个组件<a href="https://github.com/ant-design/ant-design/issues?q=label%3A%22React+18%22" target="_blank">不兼容的问题</a></li>
 <li>提 <a href="https://github.com/ant-design/ant-design/issues?q=author%3Aymjrcc" target="_blank">issues</a>，反馈问题</li>
 <li>版本回退 or 寻找临时解决方案</li>
 </ul>
@@ -387,7 +387,7 @@ span{
 <li>先开一个新仓库，成功运行 vite</li>
 <li>将原仓库逻辑代码一点一点迁移过去</li>
 <li>注意两个框架<a href="https://github.com/ymjrcc/myrenren/commit/25b408619353110d877379246a861780c02d0407" target="_blank">不兼容之处</a>，仔细修改</li>
-<li>将新仓库代码覆盖原仓库，开个分支备份原仓库</li>
+<li>新建分支备份原仓库，将新仓库代码覆盖原仓库</li>
 </ul>
 </div>
 
